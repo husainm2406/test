@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     async getData() {
-      const url = 'http://localhost:3000/users'
+      const url = 'https://husainm2406.github.io/test/db.json'
       let resp = await fetch(url);
       resp = await resp.json();
       this.users = resp;
