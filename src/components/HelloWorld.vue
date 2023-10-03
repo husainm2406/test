@@ -17,6 +17,7 @@ export default {
       const url = 'https://husainm2406.github.io/test/db.json'
       let resp = await fetch(url);
       resp = await resp.json();
+      console.log('resp',resp);
       this.users = resp;
       console.log(this.users);
     }
